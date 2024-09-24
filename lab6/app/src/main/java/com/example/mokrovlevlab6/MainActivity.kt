@@ -30,16 +30,20 @@ class MainActivity : AppCompatActivity() {
         b = findViewById(R.id.editTextText2)
         c = findViewById(R.id.editTextText3)
         answer = findViewById(R.id.textView8)
-    }
 
-    override fun onResume() {
-        super.onResume()
-        //TODO: как-то улучшить
         a.doAfterTextChanged {
-            b.doAfterTextChanged {
-                c.doAfterTextChanged {
-                    calc()
-                }
+            if (b.text.isNotEmpty() && c.text.isNotEmpty()) {
+                calc()
+            }
+        }
+        b.doAfterTextChanged {
+            if (a.text.isNotEmpty() && c.text.isNotEmpty()) {
+                calc()
+            }
+        }
+        c.doAfterTextChanged {
+            if (b.text.isNotEmpty() && a.text.isNotEmpty()) {
+                calc()
             }
         }
     }
