@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">mokrovlevlab8</string>
+    <string name="values">Конвертор величин</string>
+    <string name="monkey">В мартышках:</string>
+    <string name="enterNum">Введите число</string>
+    <string name="parrot">В попугаях:</string>
+    <string name="boa">В удавах:</string>
+    <string name="elephant">В слонятах:</string>
 </resources>
