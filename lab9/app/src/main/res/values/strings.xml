@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">mokrovlevlab9</string>
+    <string name="user_name">Имя пользователя:</string>
+    <string name="user_password">Пароль:</string>
+    <string name="name">Имя</string>
+    <string name="password">Пароль</string>
+    <string name="country">Страна:</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="def_phone_num">(XXX) XXX XX XX</string>
+    <string name="show_phone_num">Показывать номер телефона:</string>
+    <string name="all">Всем</string>
+    <string name="friends_only">Только друзьям</string>
+    <string name="nobody">Никому</string>
+    <string name="agree">Согласен с условиями пользования</string>
+    <string name="reg">Зарегестрироваться</string>
+    <string name="close">Отказаться</string>
+    <string name="registration">Регистрация</string>
+
+    <string-array name="countries">
+        <item>Россия</item>
+        <item>США</item>
+        <item>Великобритания</item>
+        <item>Китай</item>
+        <item>Канада</item>
+    </string-array>
+</resources>
