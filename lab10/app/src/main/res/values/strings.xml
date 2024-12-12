@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MokrovLevLab10</string>
+    <string name="msgText">Текст сообщения</string>
+    <string name="btnText">Текст кнопки действия</string>
+    <string name="txtColor">Цвет текста</string>
+    <string name="btnColor">Цвет кнопки действия</string>
+    <string name="Show">Показать</string>
+    <string name="fonColor">Цвет фона</string>
+    <string name="empty">Пусто</string>
+</resources>
