@@ -1,0 +1,34 @@
+<resources>
+    <string-array name="product_names">
+        <item>Грибы</item>
+        <item>Суши</item>
+        <item>Сок</item>
+        <item>Сыр</item>
+        <item>Пончик</item>
+        <item>Мороженное</item>
+        <item>Рис</item>
+        <item>Рыба</item>
+    </string-array>
+
+    <string-array name="product_prices">
+        <item>89.90</item>
+        <item>129.90</item>
+        <item>149.90</item>
+        <item>159.90</item>
+        <item>199.90</item>
+        <item>299.90</item>
+        <item>349.90</item>
+        <item>399.90</item>
+    </string-array>
+
+    <integer-array name="product_images">
+        <item>@drawable/food10</item>
+        <item>@drawable/food15</item>
+        <item>@drawable/food07</item>
+        <item>@drawable/food05</item>
+        <item>@drawable/food16</item>
+        <item>@drawable/food12</item>
+        <item>@drawable/food03</item>
+        <item>@drawable/food09</item>
+    </integer-array>
+</resources>

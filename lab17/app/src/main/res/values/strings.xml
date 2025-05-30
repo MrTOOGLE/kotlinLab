@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">lab17</string>
+    <string name="music">Музыка</string>
+    <string name="books">Книги</string>
+    <string name="news">Новости</string>
+    <string name="books_new">Новое</string>
+    <string name="books_read">Прочитанное</string>
+    <string name="clear_news">Очистить новости</string>
+    <string name="booksORnew">Книги / Новые</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.kolobokapp.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro">
+        <action
+            android:id="@+id/action_intro_to_hare"
+            app:destination="@id/hareFragment" />
+        <action
+            android:id="@+id/action_intro_to_final_bad"
+            app:destination="@id/finalBadFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hareFragment"
+        android:name="com.example.kolobokapp.HareFragment"
+        android:label="fragment_hare"
+        tools:layout="@layout/fragment_hare">
+        <action
+            android:id="@+id/action_hare_to_wolf"
+            app:destination="@id/wolfFragment" />
+        <action
+            android:id="@+id/action_hare_to_final_bad"
+            app:destination="@id/finalBadFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/wolfFragment"
+        android:name="com.example.kolobokapp.WolfFragment"
+        android:label="fragment_wolf"
+        tools:layout="@layout/fragment_wolf">
+        <action
+            android:id="@+id/action_wolf_to_bear"
+            app:destination="@id/bearFragment" />
+        <action
+            android:id="@+id/action_wolf_to_final_bad"
+            app:destination="@id/finalBadFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bearFragment"
+        android:name="com.example.kolobokapp.BearFragment"
+        android:label="fragment_bear"
+        tools:layout="@layout/fragment_bear">
+        <action
+            android:id="@+id/action_bear_to_fox"
+            app:destination="@id/foxFragment" />
+        <action
+            android:id="@+id/action_bear_to_final_bad"
+            app:destination="@id/finalBadFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/foxFragment"
+        android:name="com.example.kolobokapp.FoxFragment"
+        android:label="fragment_fox"
+        tools:layout="@layout/fragment_fox">
+        <action
+            android:id="@+id/action_fox_to_final_bad"
+            app:destination="@id/finalBadFragment" />
+        <action
+            android:id="@+id/action_fox_to_final_good"
+            app:destination="@id/finalGoodFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/finalBadFragment"
+        android:name="com.example.kolobokapp.FinalBadFragment"
+        android:label="fragment_final_bad"
+        tools:layout="@layout/fragment_final_bad">
+        <action
+            android:id="@+id/action_final_bad_to_intro"
+            app:destination="@id/introFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/finalGoodFragment"
+        android:name="com.example.kolobokapp.FinalGoodFragment"
+        android:label="fragment_final_good"
+        tools:layout="@layout/fragment_final_good">
+        <action
+            android:id="@+id/action_final_good_to_intro"
+            app:destination="@id/introFragment" />
+    </fragment>
+
+</navigation>

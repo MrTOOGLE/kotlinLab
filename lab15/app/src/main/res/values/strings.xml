@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">lab15</string>
+    <string name="add_item">Добавить товар</string>
+    <string name="edit_item">Редактировать товар</string>
+    <string name="item_name">Название товара</string>
+    <string name="item_quantity">Количество</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+    <string name="Numd">Количество:</string>
+    <string name="Num">Количество</string>
+    <string name="NameT">Название товара</string>
+    <string name="Thing">Товар:</string>
+</resources>

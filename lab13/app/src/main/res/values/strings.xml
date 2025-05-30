@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">lab13</string>
+    <string name="choose_city">Выбрать город</string>
+    <string name="city">Город:</string>
+    <string name="FO">Федеральный округ:</string>
+    <string name="Region">Регион:</string>
+    <string name="PI">Почтовый индекс:</string>
+    <string name="Time">Часовой пояс:</string>
+    <string name="PN">Население:</string>
+    <string name="Made">Основан в:</string>
+    <string name="Show">Показать на карте</string>
+</resources>
