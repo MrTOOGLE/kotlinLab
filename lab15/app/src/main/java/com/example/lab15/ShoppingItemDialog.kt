@@ -67,7 +67,6 @@ class ShoppingItemDialog : DialogFragment() {
                 }
             }
             .setNegativeButton("Отмена") { _, _ ->
-                // Ничего не делаем
             }
 
         return builder.create()

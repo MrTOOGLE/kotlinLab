@@ -42,13 +42,19 @@ class CityInfoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Инициализируем данные
+        Common.initCities(requireContext())
+
         // Получаем индекс города из аргументов
         arguments?.getInt(ARG_CITY_INDEX, -1)?.let { cityIndex ->
             if (cityIndex != -1 && cityIndex < Common.cities.size) {
                 currentCity = Common.cities[cityIndex]
                 updateCityInfo()
+            } else {
+                // Показываем заглушку
+                showPlaceholder()
             }
-        }
+        } ?: showPlaceholder()
 
         // Настраиваем кнопку карты
         binding.buttonShowOnMap.setOnClickListener {
@@ -63,6 +69,19 @@ class CityInfoFragment : Fragment() {
         }
     }
 
+    private fun showPlaceholder() {
+        binding.apply {
+            textCity.text = "Выберите город из списка"
+            textDistrict.text = ""
+            textRegion.text = ""
+            textPostalCode.text = ""
+            textTimezone.text = ""
+            textPopulation.text = ""
+            textFounded.text = ""
+            buttonShowOnMap.isEnabled = false
+        }
+    }
+
     private fun updateCityInfo() {
         currentCity?.let { city ->
             binding.apply {
@@ -73,6 +92,7 @@ class CityInfoFragment : Fragment() {
                 textTimezone.text = "Часовой пояс: ${city.timezone}"
                 textPopulation.text = "Население: ${city.population}"
                 textFounded.text = "Основан в: ${city.founded} году"
+                buttonShowOnMap.isEnabled = true
             }
         }
     }

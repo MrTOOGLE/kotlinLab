@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lab19</string>
+    <string name="Btn">Нажмите кнопку для получения контактов</string>
+    <string name="GetContact">Получить контакты</string>
+</resources>

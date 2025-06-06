@@ -1,12 +1,8 @@
 package com.example.lab12.src
 
-import android.graphics.PorterDuff
-import android.os.Build
 import android.os.Bundle
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lab12.R
@@ -69,7 +65,6 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
-        // Освобождаем ресурсы TypedArray
         images.recycle()
     }
 
@@ -83,7 +78,6 @@ class MainActivity : AppCompatActivity() {
         val snackbarView = snackbar.view
         snackbarView.setBackgroundColor(color)
 
-        // Находим и изменяем цвет текста (при необходимости)
         val textView = snackbarView.findViewById<TextView>(com.google.android.material.R.id.snackbar_text)
         textView.setTextColor(ContextCompat.getColor(this, R.color.white))
 

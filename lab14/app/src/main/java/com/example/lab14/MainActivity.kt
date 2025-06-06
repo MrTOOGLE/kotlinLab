@@ -19,16 +19,16 @@ class MainActivity : AppCompatActivity() {
         isTwoPane = findViewById<View>(R.id.fragment_city_info) != null
 
         if (savedInstanceState == null) {
-            // Добавляем фрагмент списка городов
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_city_list, CityListFragment())
-                .commit()
-
-            // В двухпанельном режиме показываем пустой фрагмент информации
             if (isTwoPane) {
-                val fragment = CityInfoFragment.newInstance(-1)
+                // В двухпанельном режиме добавляем оба фрагмента
                 supportFragmentManager.beginTransaction()
-                    .replace(R.id.fragment_city_info, fragment, "city_info")
+                    .replace(R.id.fragment_city_info, CityInfoFragment.newInstance(-1), "city_info")
+                    .replace(R.id.fragment_city_list, CityListFragment())
+                    .commit()
+            } else {
+                // В однопанельном режиме только список городов
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_city_list, CityListFragment())
                     .commit()
             }
         }

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">lab22</string>
+    <string name="game_title">Игра «Найди точку!»</string>
+    <string name="status_searching">Определение местоположения...</string>
+    <string name="status_point_set">Точка загадана, ищите!</string>
+    <string name="status_point_found">Ура, точка найдена!</string>
+    <string name="button_new_point">Загадать новую точку!</string>
+    <string name="button_settings">Открыть настройки программы</string>
+    <string name="distance_km">Текущее расстояние до точки: %.1f км</string>
+    <string name="distance_m">Текущее расстояние до точки: %.0f м</string>
+    <string name="error_location_needed">Сначала определите ваше местоположение</string>
+    <string name="error_permission_needed">Разрешение на геолокацию необходимо для работы игры</string>
+</resources>

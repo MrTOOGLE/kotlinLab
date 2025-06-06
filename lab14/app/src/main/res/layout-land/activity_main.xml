@@ -6,7 +6,7 @@
     android:orientation="horizontal">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment_city_list"
+        android:id="@+id/fragment_city_info"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1" />
@@ -17,7 +17,7 @@
         android:background="@color/gray" />
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment_city_info"
+        android:id="@+id/fragment_city_list"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1" />
